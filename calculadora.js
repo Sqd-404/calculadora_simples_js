@@ -44,17 +44,14 @@ function exibirMenu() {
 		}
 	}
 }
-//função de exponenciação
+//função de divisão
 /**
- * @author Ilnara Ackermann
+ * @author Luisa Nievas
  * @date 2023/10/13
- * @description função responsável pelo calculo de exponenciações
+ * @description função responsável pelo cálculo de divisão
  */
-function exponenciar() {
-	const num1 = readlineSync.question("numero base: ");
-	const num2 = readlineSync.question("numero do expoente: ");
-	const resultado = num1 ** num2;
-	console.log(resultado);
+function dividir() {
+
 }
 
 exibirMenu();
