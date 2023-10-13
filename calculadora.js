@@ -14,6 +14,6 @@ function somar() {
 		const resultado = num1 + num2; //Soma os valores inseridos pelo usuário e armazena na variável resultado
 		console.log(`O resultado da soma é: ${resultado}`); //Exibe o resultado da soma na tela 
 	} else {
-		console.log('Entrada inválida. Por favor, insira números válidos.'); //Exibe mensagem de erro caso o usuário insira um valor inválido	
+		console.log('Isso não é um número. Por favor, insira números válidos.'); //Exibe mensagem de erro caso o usuário insira um valor inválido	
 	}
 }
