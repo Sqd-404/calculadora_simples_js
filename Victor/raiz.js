@@ -1,8 +1,15 @@
+const readlineSync = require('readline-sync');
 function descobrirRaiz() {
-    let numero = prompt("Digite um número para calcular sua raiz quadrada: ") //criei uma variável para ser o número escolhido pelo usuário
-    while (numero < 0){ //Fiz esse laço de repetição para que se o usuário escolher um número inválido, retorne para ele a informação e ele possa escolher um novo número
-        numero = prompt('Não existe raiz de número negativo, por favor insira um número válido: ')
-    } return alert(`A raiz do número escolhido foi ${Math.sqrt(numero)}`); //Aqui retornará ao usuário o valor da raiz do número escolhido
+    let indice = Number(readlineSync.question('Escolha o indice da raiz: '));
+    while (indice < 1) {
+        indice = Number(readlineSync.question('O indice nao pode ser menor que 1, escolha um indice valido: '));
+    }
+    let radicando = Number(readlineSync.question('Escolha o numero do radicando: '));
+    while (radicando < 0) {
+        radicando = Number(readlineSync.question('Nao existe raiz de numero negativo, escolha um radicando valido: '));
+    }
+    const resultado = radicando ** (1 / indice);
+    console.log(resultado);
 }
 
 descobrirRaiz();
