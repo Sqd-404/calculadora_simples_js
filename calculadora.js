@@ -1,5 +1,5 @@
 // importando função do lib
-import { multiplicar } from "./lib/multiplication.js";
+import { multiplicar } from "./libs/multiplication.js";
 
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
