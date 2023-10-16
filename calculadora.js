@@ -21,7 +21,7 @@ function exibirMenu() {
 		console.log("5 - Exponenciação");
 		console.log("6 - Radiciação");
 		console.log("7 - Sair");
-		const opcao = readlineSync.question('Opção: ');
+		const opcao = readlineSync.question("Opção: ");
 		switch (opcao) {
 			case "1":
 				somar();
