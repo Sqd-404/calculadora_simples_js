@@ -1,5 +1,7 @@
 // importando função do lib
-import { multiplicar } from "./libs/multiplication.js";
+// import { multiplicar } from "./libs/multiplication.js";
+const multiplyFunction = require('./libs/multiplication.js');
+const multiplicar = multiplyFunction.multiplicar;
 
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
@@ -19,7 +21,7 @@ function exibirMenu() {
 		console.log("5 - Exponenciação");
 		console.log("6 - Radiciação");
 		console.log("7 - Sair");
-		const opcao = readlineSync.question("Opção: ");
+		const opcao = readlineSync.question('Opção: ');
 		switch (opcao) {
 			case "1":
 				somar();
