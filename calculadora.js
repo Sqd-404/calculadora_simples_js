@@ -1,3 +1,6 @@
+// importando função do lib
+import { multiplicar } from "./lib/multiplication.js";
+
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
 //Criação do menu principal da calculadora
