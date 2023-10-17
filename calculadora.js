@@ -1,3 +1,6 @@
+//importando funções da lib
+const { subtraction } = require('./libs/subtraction.js');
+
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
 //Criação do menu principal da calculadora

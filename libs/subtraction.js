@@ -1,7 +1,10 @@
+//importando modulo readline-sync
+const readlineSync = require("readline-sync");
+
 //@author: Wilson Rocha
 //@date: Thu Oct 12 15:38:03 2023
 //@description: A função recebe dois valores e retorna a subtração deles
-const subtraction = (n1, n2) => {
+exports.subtraction = (n1, n2) => {
 
     let result;
     
