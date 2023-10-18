@@ -10,15 +10,18 @@ const readlineSync = require("readline-sync");
 exports.dividir = (num1, num2) =>{
 	let result;
 
-	num1 =  Number(readlineSync.question('Digite o primeiro número: '));
-	num2 =  Number(readlineSync.question('Digite o segundo número: '));
+	num1 =  Number(readlineSync.question('Primeiro valor: '));
+	num2 =  Number(readlineSync.question('Segundo valor: '));
+
+    let retornar;
 
 	if( num1 && num2 !== 0 ){
 		result = num1 / num2
-		console.log(`Resultado: ${result}`);
+		retornar = `Resultado: ${result}`;
 	}else{
-		console.log('Erro ao tentar executar a divisão. Verifique se inseriu os números corretamente.');
+		retornar = 'Erro ao tentar executar a divisão. Verifique se inseriu os números corretamente.';
 	}
 
+    return console.log(retornar)
+
 }
- dividir();
