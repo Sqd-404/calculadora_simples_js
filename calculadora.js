@@ -2,7 +2,10 @@
 //importando funções da lib
 const { subtraction } = require('./libs/subtraction.js');
 const multiplyFunction = require('./libs/multiplication.js');
+const divisionFunction = require('./libs/division.js');
 const multiplicar = multiplyFunction.multiplicar;
+const dividir = divisionFunction.dividir;
+
 
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
@@ -51,27 +54,17 @@ function exibirMenu() {
 		}
 	}
 }
-//função de divisão
+//função de exponenciação
 /**
- * @author Luisa Nievas
+ * @author Ilnara Ackermann
  * @date 2023/10/13
- * @description função responsável pelo cálculo de divisão
+ * @description função responsável pelo calculo de exponenciações
  */
-
-const dividir = (num1, num2) =>{
-	let result;
-
-	num1 =  Number(readlineSync.question('Digite o primeiro número: '));
-	num2 =  Number(readlineSync.question('Digite o segundo número: '));
-
-	if( num1 && num2 !== 0 ){
-		result = num1 / num2
-		console.log(`Resultado: ${result}`);
-	}else{
-		console.log('Erro ao tentar executar a divisão. Verifique se inseriu os números corretamente.');
-	}
-
+function exponenciar() {
+	const num1 = readlineSync.question("numero base: ");
+	const num2 = readlineSync.question("numero do expoente: ");
+	const resultado = num1 ** num2;
+	console.log(resultado);
 }
 
-// exibirMenu();
-dividir();
+exibirMenu();
