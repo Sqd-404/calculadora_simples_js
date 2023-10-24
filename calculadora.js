@@ -1,6 +1,5 @@
-
 //importando funções da lib
-const { subtraction } = require('./libs/subtraction.js');
+const subtraction = require('./libs/subtraction.js');
 const multiplyFunction = require('./libs/multiplication.js');
 const multiplicar = multiplyFunction.multiplicar;
 
