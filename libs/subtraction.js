@@ -1,15 +1,9 @@
-//importando modulo readline-sync
-const readlineSync = require("readline-sync");
-
 //@author: Wilson Rocha
 //@date: Thu Oct 12 15:38:03 2023
 //@description: A função recebe dois valores e retorna a subtração deles
-exports.subtraction = (n1, n2) => {
+const subtraction = (n1, n2) => {
 
     let result;
-    
-    n1 = Number(readlineSync.question('Digite o primeiro numero: '));
-    n2 = Number(readlineSync.question('Digite o segundo numero: '));
 
     const maxDecimals = Math.max(countDecimals(n1), countDecimals(n2)); //conta o número máximo de casas decimais dos número fornecidos
     
@@ -26,3 +20,5 @@ const countDecimals = (number) => {
     if (Math.floor(number)=== number) return 0;
     return number.toString().split('.')[1].length || 0;
 }
+
+module.exports = subtraction
