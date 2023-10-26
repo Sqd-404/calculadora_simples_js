@@ -7,7 +7,7 @@ const readlineSync = require("readline-sync");
  * @description função responsável pelo cálculo de divisão
  */
 
-exports.dividir = (num1, num2) =>{
+function dividir (num1, num2) {
 	let result;
 
 	num1 =  Number(readlineSync.question('Primeiro valor: '));
@@ -25,3 +25,5 @@ exports.dividir = (num1, num2) =>{
     return console.log(retornar)
 
 }
+
+module.exports = dividir;
