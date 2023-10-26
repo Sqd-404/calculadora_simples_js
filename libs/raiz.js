@@ -19,3 +19,5 @@ function descobrirRaiz() {
     const resultado = radicando ** (1 / indice);
     console.log(`O resultado é: ${resultado}`);
 }
+
+module.exports = raiz;
