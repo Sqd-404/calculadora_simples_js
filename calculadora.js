@@ -1,9 +1,5 @@
-
-//importando funções da lib
-const { subtraction } = require('./libs/subtraction.js');
-const multiplyFunction = require('./libs/multiplication.js');
-const multiplicar = multiplyFunction.multiplicar;
-
+// //importando funções da lib
+const { exponenciar, multiplicar, subtrair } = require("./libs/index");
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
 
@@ -29,7 +25,9 @@ function exibirMenu() {
 				somar();
 				break;
 			case "2":
-				subtrair();
+				const num1 = readlineSync.question("Digite o Minuendo: ");
+				const num2 = readlineSync.question("Digite o Subtraendo: ");
+				subtrair(num1,num2);
 				break;
 			case "3":
 				multiplicar();
@@ -38,7 +36,7 @@ function exibirMenu() {
 				dividir();
 				break;
 			case "5":
-				exponenciar();
+				exponenciar(readlineSync);
 				break;
 			case "6":
 				radiciar();
@@ -51,17 +49,6 @@ function exibirMenu() {
 		}
 	}
 }
-//função de exponenciação
-/**
- * @author Ilnara Ackermann
- * @date 2023/10/13
- * @description função responsável pelo calculo de exponenciações
- */
-function exponenciar() {
-	const num1 = readlineSync.question("numero base: ");
-	const num2 = readlineSync.question("numero do expoente: ");
-	const resultado = num1 ** num2;
-	console.log(resultado);
-}
+
 
 exibirMenu();
