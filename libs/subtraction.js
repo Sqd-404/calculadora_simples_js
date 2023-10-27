@@ -1,18 +1,18 @@
 //@author: Wilson Rocha
 //@date: Thu Oct 12 15:38:03 2023
 //@description: A função recebe dois valores e retorna a subtração deles
-const subtrair = (n1, n2) => {
+const subtrair = (minuendo, subtraendo) => {
 
     let result;
-    n1 = Number(n1) 
-    n2 = Number(n2)
+    minuendo = Number(minuendo) 
+    subtraendo = Number(subtraendo)
 
-    const maxDecimals = Math.max(contarDecimais(n1), contarDecimais(n2)); //conta o número máximo de casas decimais dos número fornecidos
+    const maxDecimals = Math.max(contarDecimais(minuendo), contarDecimais(subtraendo)); //conta o número máximo de casas decimais dos número fornecidos
     
 
-    result = (n1 - n2).toFixed(maxDecimals); //formata o número de casas decimais de acordo com o número máximo de casas decimais dos números fornecidos
+    result = (minuendo - subtraendo).toFixed(maxDecimals); //formata o número de casas decimais de acordo com o número máximo de casas decimais dos números fornecidos
 
-    console.log(`Resultado: ${n1} - ${n2} = ${result}`);
+    console.log(`\nResultado: ${minuendo} - ${subtraendo} = ${result}\n`);
 }
 
 //@author: Wilson rocha

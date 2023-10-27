@@ -1,5 +1,3 @@
-const readlineSync = require("readline-sync");
-
 //função de divisão
 /**
  * @author Luisa Nievas
@@ -7,23 +5,23 @@ const readlineSync = require("readline-sync");
  * @description função responsável pelo cálculo de divisão
  */
 
-function dividir (num1, num2) {
+function dividir (dividendo, divisor) {
 	let result;
 
-	num1 =  Number(readlineSync.question('Primeiro valor: '));
-	num2 =  Number(readlineSync.question('Segundo valor: '));
+	dividendo = Number(dividendo);
+	divisor = Number(divisor);
 
     let retornar;
 
-	if( num1 && num2 !== 0 ){
-		result = num1 / num2
-		retornar = `Resultado: ${result}`;
+	if( dividendo && divisor !== 0 ){
+		result = dividendo / divisor
+		retornar = `\nResultado: ${result}\n`;
 	}else{
-		retornar = 'Erro ao tentar executar a divisão. Verifique se inseriu os números corretamente.';
+		retornar = '\nErro ao tentar executar a divisão. Verifique se inseriu os números corretamente.\n';
 	}
 
     return console.log(retornar)
 
 }
 
-module.exports = dividir;
+module.exports = dividir

@@ -6,18 +6,19 @@
  * @description função responsável por descobrir a raiz
  */
 
-const readlineSync = require('readline-sync');
-function descobrirRaiz() {
-    let indice = Number(readlineSync.question('Escolha o indice da raiz: '));
+function descobrirRaiz(indice, radicando) {
+
+    indice = Number(indice);
     while (isNaN(indice) || indice < 1) {
-        indice = Number(readlineSync.question('O indice deve ser um numero e maior que 1, escolha um indice valido: '));
+        console.log('O indice deve ser um numero e maior que 1, escolha um indice valido: ');
     }
-    let radicando = Number(readlineSync.question('Escolha o numero do radicando: '));
+    
+    radicando = Number(radicando);
     while (isNaN(radicando) || radicando < 0) {
-        radicando = Number(readlineSync.question('O radicando deve ser um numero e nao pode ser negativo, escolha um radicando valido: '));
+        console.log('O radicando deve ser um numero e nao pode ser negativo, escolha um radicando valido: ');
     }
     const resultado = radicando ** (1 / indice);
-    console.log(`O resultado é: ${resultado}`);
+    console.log(`\nO resultado é: ${resultado}\n`);
 }
 
 module.exports = descobrirRaiz

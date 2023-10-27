@@ -6,15 +6,15 @@
  */
 
 // Função de soma
-function somar(n1,n2) {
+function somar(adendo1,adendo2) {
 
-	if (!isNaN(n1) && !isNaN(n2)) { //Verifica se os valores inseridos são números ou não
-			n1 = parseFloat(n1); //Solicita ao usuario o número faz leitura como string e o parseFloat converte a string para um númeor decimal
-		 	n2 = parseFloat(n2); 
-		const resultado = n1 + n2; //Soma os valores inseridos pelo usuário e armazena na variável resultado
-		console.log(`O resultado da soma é: ${resultado}`); //Exibe o resultado da soma na tela 
+	if (!isNaN(adendo1) && !isNaN(adendo2)) { //Verifica se os valores inseridos são números ou não
+			adendo1 = parseFloat(adendo1); //Solicita ao usuario o número faz leitura como string e o parseFloat converte a string para um númeor decimal
+		 	adendo2 = parseFloat(adendo2); 
+		const resultado = adendo1 + adendo2; //Soma os valores inseridos pelo usuário e armazena na variável resultado
+		console.log(`\nO resultado da soma é: ${resultado}\n`); //Exibe o resultado da soma na tela 
 	} else {
-		console.log('Entrada inválida. Por favor, insira números válidos.'); //Exibe mensagem de erro caso o usuário insira um valor inválido	
+		console.log('\nEntrada inválida. Por favor, insira números válidos.\n'); //Exibe mensagem de erro caso o usuário insira um valor inválido	
 	}
 }
 
