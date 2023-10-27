@@ -1,19 +1,54 @@
-//função de soma
+// //importando funções da lib
+const { somar, exponenciar, multiplicar, subtrair, dividir } = require("./libs/index");
+//importando modulo readline-sync
+const readlineSync = require("readline-sync");
+
+//Criação do menu principal da calculadora
 /**
- * @author Paulo Victor
+ * @author Ilnara Ackermann
  * @date 2023/10/13
- * @description função responsável pelo calculo de soma
+ * @description Menu básico para o funcionamento da calculadora
  */
-
-// Função de soma
-function somar() {
-    const num1 = parseFloat(readlineSync.question("Primeiro número: ")); //Solicita ao usuario o número faz leitura como string e o parseFloat converte a string para um númeor decimal
-	const num2 = parseFloat(readlineSync.question("Segundo número: ")); 
-
-	if (!isNaN(num1) && !isNaN(num2)) { //Verifica se os valores inseridos são números ou não
-		const resultado = num1 + num2; //Soma os valores inseridos pelo usuário e armazena na variável resultado
-		console.log(`O resultado da soma é: ${resultado}`); //Exibe o resultado da soma na tela 
-	} else {
-		console.log('Isso não é um número. Por favor, insira números válidos.'); //Exibe mensagem de erro caso o usuário insira um valor inválido	
+function exibirMenu() {
+	while (true) {
+		console.log("Escolha uma opção:");
+		console.log("1 - Soma");
+		console.log("2 - Subtração");
+		console.log("3 - Multiplicação");
+		console.log("4 - Divisão");
+		console.log("5 - Exponenciação");
+		console.log("6 - Radiciação");
+		console.log("7 - Sair");
+		const opcao = readlineSync.question("Opção: ");
+		switch (opcao) {
+			case "1":
+				somar();
+				break;
+			case "2":
+				const num1 = readlineSync.question("Digite o Minuendo: ");
+				const num2 = readlineSync.question("Digite o Subtraendo: ");
+				subtrair(num1,num2);
+				break;
+			case "3":
+				multiplicar();
+				break;
+			case "4":
+				dividir();
+				break;
+			case "5":
+				exponenciar(readlineSync);
+				break;
+			case "6":
+				radiciar();
+				break;
+			case "7":
+                console.log("Saindo do programa...");
+				return;
+			default:
+				console.log("Opção inválida, tente novamente.");
+		}
 	}
 }
+
+
+exibirMenu();
