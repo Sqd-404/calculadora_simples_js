@@ -39,4 +39,38 @@ Seu aplicativo deve ser capaz de fazer o seguinte:
 ## 📥 Submissão:
 Ao concluir, faça um Pull Request para este repositório com seu código e comente explicando a lógica utilizada, dificuldades encontradas durante o desenvolvimento e como interagir com a equipe (lista de comandos e scripts, etc.). 
 
+## 🤖 Nossa Equipe
+
+### Ilnara Ackerman
+- Nome: Ilnara Ackerman
+- LinkedIn: [Ilnara Ackermann](https://www.linkedin.com/in/ilnaraackermann/)
+- GitHub: [ilnaraackermann](https://github.com/ilnaraackermann)
+
+### Victor Hugo
+- Nome: Victor Hugo
+- LinkedIn: [Victor Hugo Oliveira](linkedin.com/in/victorh-oliveira)
+- GitHub: [YourOliveira](github.com/YourOliveira)
+
+### Jeferson Lima
+- Nome: Jeferson Lima
+- LinkedIn: [Jeferson Lima](www.linkedin.com/in/jeferson-lima-226973aa/)
+- GitHub: [limajeferson](github.com/limajeferson)
+
+### Paulo Victor
+- Nome: Paulo Victor
+- LinkedIn: [Paulo Victor](https://www.linkedin.com/in/paulonanjos/)
+- GitHub: [PauloVictorRaika](https://github.com/PauloVictorRaika)
+
+### Wilson
+- Nome: Wilson
+- LinkedIn: [Wilson Rocha Sown](https://www.linkedin.com/in/wilson-rocha-sown/)
+- GitHub: [Sownatta](https://github.com/Sownatta)
+
+### Luisa Nievas
+- Nome: Luisa Nievas
+- LinkedIn: [Luisa Nievas](www.linkedin.com/in/luisa-nievas)
+- GitHub: [lunievas](github.com/lunievas)
+
+
+
 🌟 Boa sorte e bons céus estrelados!
