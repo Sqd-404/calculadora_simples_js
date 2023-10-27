@@ -1,5 +1,5 @@
 // //importando funções da lib
-const { exponenciar, multiplicar, subtrair, dividir } = require("./libs/index");
+const { somar, exponenciar, multiplicar, subtrair, dividir } = require("./libs/index");
 //importando modulo readline-sync
 const readlineSync = require("readline-sync");
 
