@@ -22,7 +22,9 @@ function exibirMenu() {
 		const opcao = readlineSync.question("Opção: ");
 		switch (opcao) {
 			case "1":
-				somar();
+				const n1 = readlineSync.question("Digite o primeiro número: ");
+				const n2 = readlineSync.question("Digite o segundo número: ");
+				somar(n1,n2);
 				break;
 			case "2":
 				const num1 = readlineSync.question("Digite o Minuendo: ");
