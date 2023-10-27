@@ -1,10 +1,34 @@
 ![](https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/header-logo.svg)
 
-Descrição
-
-Projeto de calculadora simples em JavaScript que não possui interface gráfica, apenas um prompt para solicitar os valores dos cálculos. A calculadora é capaz de realizar cálculos complexos, incluindo operações de soma, subtração, multiplicação, divisão, potenciação, radiciação. 
-
 # 🚀 Desafio Técnico: calculadora simples em JavaScript. 
+
+Descrição
+---
+Projeto de calculadora simples em JavaScript que não possui interface gráfica, apenas um prompt para solicitar os valores dos cálculos. A calculadora é capaz de realizar cálculos complexos, incluindo operações de soma, subtração, multiplicação, divisão, potenciação, radiciação. Ele é dividido em 6 operadores:
+
+- `@calculadora_simples_js/libs`: Diretório que contém a biblioteca dos scripts/funções de operações básicas em Matemática de cálculos, separados
+- `@calculadora_simples_js/node_modules`: Diretório que contém a Function exibirMenu e function exponenciar
+- `@calculadora_simples_js/calculadora.js`: Arquivo que contém o menu de interação
+- `@calculadora_simples_js/productBacklog.pdf`: Documento de Product Backlog
+
+## Executando o código localmente
+
+1. Certifique-se de possuir instalado o [Node.js LTS](https://nodejs.org/pt-br/download/) (versão de suporte de longo prazo)
+
+```sh
+winget install OpenJS.NodeJS.LTS
+```
+2. Abra a pasta onde está instalado o projeto e digite `cmd` na barra de endereço
+
+```sh
+cmd
+```
+
+3. Digite `calculadora.js` (caso tenha o VS Code instalado)
+
+```sh
+calculadora.js
+```
 
 ## 🌌 Projeto:
 Você utilizará suas habilidades técnicas para criar um script elaborado para a lógica de uma calculadora. Você criará seu script e deverá mesclar com o dos seus companheiros. 
