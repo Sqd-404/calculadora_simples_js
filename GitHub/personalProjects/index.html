@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Processamento de XML</title>
+</head>
+
+<body>
+    <h1>Processamento de XML</h1>
+    <input type="file" id="xmlFile" accept=".xml">
+    <button id="carregarXML">Carregar XML</button>
+    <button id="processarXML">Processar XML</button>
+    <button id="salvarXML" style="display: none;">Salvar XML</button>
+    <div id="resultado"></div>
+    <table id="tabelaNCM" style="display: none;">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>NCM</th>
+                <th>CFOP</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
